@@ -1,0 +1,62 @@
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container div {
+display: grid;
+grid-template-columns: repeat( 3 ,150px);
+grid-template-rows: 100px;
+/* height: 400px;  */
+margin: 10px; 
+border-radius: 10px;
+grid-template-areas: " col1 col2 col3";
+color: white;
+justify-content: center;
+align-content: center;
+display: inline-block;
+}
+
+
+.container .col1 {
+   
+background-color: orange;
+align-content: center;
+grid-area: col1;
+}
+
+
+.container .col2 {
+    background-color: teal;
+    align-content: center;
+    grid-area: col2;
+    }
+
+    
+.container .col3 {
+    background-color: rgb(2, 56, 2);
+    align-content: center;
+    grid-area: col3;
+    }
+    
+    .container .col1 button {
+      border-radius: 10px;
+      background-color: orange ;
+      color: white;
+      border-color: white;
+    }
+    .container .col2 button {
+        border-radius: 10px;
+        background-color: teal ;
+        color: white;
+        border-color: white;
+      }
+      .container .col3 button {
+        border-radius: 10px;
+        background-color: rgb(2, 56, 2 ) ;
+        color: white;
+        border-color: white;
+      }
+
+      
